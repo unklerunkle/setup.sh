@@ -7,6 +7,7 @@ files=$box/files
 exploits=$box/exploits
 users=$box/users
 passwords=$box/passwords
+hashes=$box/hashes
 creds=$box/creds
 
 if [ ! -d "$box" ]; then
@@ -26,6 +27,9 @@ if [ ! -d "$users" ]; then
 fi
 if [ ! -d "$passwords" ]; then
 	mkdir $passwords
+fi
+if [ ! -d "$hashes" ]; then
+	mkdir $hashes
 fi
 if [ ! -d "$creds" ]; then
 	mkdir $creds
